@@ -1,0 +1,64 @@
+relationship 9b9fca23-f96e-4413-9e13-bc6341687108
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'euro jogos'.data
+	toColumn: LocalDateTable_2f72da9f-1c63-4325-bbc7-73a0adbed36f.Date
+
+relationship 16e345a7-6f36-4600-bb7a-ad12529f717b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'euro jogadores'.data_nascimento
+	toColumn: LocalDateTable_58d2cc0e-0c77-4914-93a1-e1e4a89c319e.Date
+
+relationship c0e1eb2e-43fb-4eb7-bee1-fcb4f6f771a8
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'euro gols'.nome_jogador
+	toColumn: 'euro jogadores'.nome
+
+relationship AutoDetected_060f8fa8-8286-4a44-acc9-028a3395762e
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'euro resultados'.idjogo
+	toColumn: 'euro jogos'.idjogo
+
+relationship AutoDetected_10fcb38f-cd76-4190-a883-54dfe20b0b70
+	fromColumn: 'euro gols'.idjogo
+	toColumn: 'euro jogos'.idjogo
+
+relationship cb09f89b-9300-02c9-33d4-ac19b7d476b0
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'euro edições'.campea
+	toColumn: 'euro campeãs'.selecao
+
+relationship 0d1b9e41-25fd-67c3-f515-413d2f79bcc7
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'euro resultados'.selecao
+	toColumn: 'euro campeãs'.selecao
+
+relationship b76faad7-c7d4-44b7-8b98-fd1d502e61d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'euro gols'.data_nascimento_jogador
+	toColumn: LocalDateTable_877ffdf3-d2f4-4fb5-8a52-4c3f1b2be1b5.Date
+
+relationship c98b975c-7775-4017-b213-e4396bb6397e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'euro gols'.data_jogo
+	toColumn: LocalDateTable_b114a824-1c1b-4efe-a59b-117692a7b61f.Date
+
+relationship AutoDetected_2ea10140-4821-41de-ab15-6951a6f01cc4
+	fromColumn: 'euro resultados'.selecao
+	toColumn: 'euro nomes atuais'.selecao
+
+relationship AutoDetected_10de6660-6ccb-419f-b63a-bef5e1d16578
+	fromColumn: 'euro jogadores'.selecao
+	toColumn: 'euro nomes atuais'.selecao
+
+relationship AutoDetected_e140dc23-9116-4735-8daa-3895a68c3eac
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'euro campeãs'.selecao
+	toColumn: 'euro nomes atuais'.selecao
+
+relationship 1e6d1772-306f-8f9b-7de4-afce3aee8598
+	isActive: false
+	fromColumn: 'euro gols'.seleção
+	toColumn: 'euro nomes atuais'.selecao
+

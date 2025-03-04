@@ -1,0 +1,31 @@
+table 'euro campeãs'
+	lineageTag: da7e10db-8cbf-4c53-b9a2-fcc3882f63da
+
+	column idcampeãs
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d689500-b35e-401b-9fdc-1e722796b378
+		summarizeBy: sum
+		sourceColumn: idcampeãs
+
+		annotation SummarizationSetBy = Automatic
+
+	column selecao
+		dataType: string
+		lineageTag: 7310e74f-023c-438c-8f25-d892aec66122
+		summarizeBy: none
+		sourceColumn: selecao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro campeãs' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_campeãs = Fonte{[Schema="euro",Item="campeãs"]}[Data]
+				in
+				    euro_campeãs
+
+	annotation PBI_ResultType = Table
+

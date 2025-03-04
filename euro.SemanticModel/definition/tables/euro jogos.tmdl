@@ -1,0 +1,163 @@
+table 'euro jogos'
+	lineageTag: d5db7077-98e0-4523-a7b2-75ab26aeec10
+
+	column fase
+		dataType: string
+		lineageTag: 7d6e1969-5c45-476c-8160-21f700d5311b
+		summarizeBy: none
+		sourceColumn: fase
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 83471d1b-267e-41bf-8543-2622a4ceece8
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: 9b9fca23-f96e-4413-9e13-bc6341687108
+			defaultHierarchy: LocalDateTable_2f72da9f-1c63-4325-bbc7-73a0adbed36f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column horário
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: c665eb65-c344-4b8e-bd93-da8bf8157ded
+		summarizeBy: none
+		sourceColumn: horário
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column país
+		dataType: string
+		lineageTag: 6695fff6-8467-442f-809b-7d5312f1573b
+		summarizeBy: none
+		sourceColumn: país
+
+		annotation SummarizationSetBy = Automatic
+
+	column cidade
+		dataType: string
+		lineageTag: c70499f7-7c49-44d8-9f52-8d050eb2f5bb
+		summarizeBy: none
+		sourceColumn: cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column estádio
+		dataType: string
+		lineageTag: 8a6fbfd8-756e-4cdc-92e1-c85956510185
+		summarizeBy: none
+		sourceColumn: estádio
+
+		annotation SummarizationSetBy = Automatic
+
+	column seleção1
+		dataType: string
+		lineageTag: cdacbd59-f9bd-4d9c-9ac8-12fb6804429d
+		summarizeBy: none
+		sourceColumn: seleção1
+
+		annotation SummarizationSetBy = Automatic
+
+	column gols_seleção1
+		dataType: int64
+		formatString: 0
+		lineageTag: eaa019b2-fb4f-4a37-8ea5-d8a9929cd158
+		summarizeBy: sum
+		sourceColumn: gols_seleção1
+
+		annotation SummarizationSetBy = Automatic
+
+	column seleção2
+		dataType: string
+		lineageTag: 30cbf770-09cd-416f-adbf-05a9ae6b7fe8
+		summarizeBy: none
+		sourceColumn: seleção2
+
+		annotation SummarizationSetBy = Automatic
+
+	column gols_seleção2
+		dataType: int64
+		formatString: 0
+		lineageTag: c0c1b2f8-a0aa-486d-892a-784f693dd48a
+		summarizeBy: sum
+		sourceColumn: gols_seleção2
+
+		annotation SummarizationSetBy = Automatic
+
+	column desempate
+		dataType: string
+		lineageTag: 2123f770-184a-4345-8df7-968a314b013b
+		summarizeBy: none
+		sourceColumn: desempate
+
+		annotation SummarizationSetBy = Automatic
+
+	column venc_desempate
+		dataType: string
+		lineageTag: 23b1feae-2dc5-4ef9-ae55-123919705686
+		summarizeBy: none
+		sourceColumn: venc_desempate
+
+		annotation SummarizationSetBy = Automatic
+
+	column soma_gols
+		dataType: int64
+		formatString: 0
+		lineageTag: 3493b0a8-ba95-4918-ac1d-10b56476c87d
+		summarizeBy: sum
+		sourceColumn: soma_gols
+
+		annotation SummarizationSetBy = Automatic
+
+	column idjogo
+		dataType: int64
+		formatString: 0
+		lineageTag: 227e5d1f-14ea-4157-a679-537daa6aab75
+		summarizeBy: none
+		sourceColumn: idjogo
+
+		annotation SummarizationSetBy = Automatic
+
+	column idedicao
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e8b4e7c-2afd-434d-813a-4801e2389be9
+		summarizeBy: sum
+		sourceColumn: idedicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column cidade_país
+		dataType: string
+		lineageTag: 5c837163-5ce0-4fe3-877f-70492fe10e93
+		summarizeBy: none
+		sourceColumn: cidade_país
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro jogos' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_jogos = Fonte{[Schema="euro",Item="jogos"]}[Data],
+				    #"Personalização Adicionada" = Table.AddColumn(euro_jogos, "soma_gols", each [gols_seleção1] + [gols_seleção2]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"soma_gols", Int64.Type}}),
+				    #"Inserted Merged Column" = Table.AddColumn(#"Tipo Alterado", "cidade_país", each Text.Combine({[cidade], ", ", [país]}), type text)
+				in
+				    #"Inserted Merged Column"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

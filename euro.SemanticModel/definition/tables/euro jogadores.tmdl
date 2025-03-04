@@ -1,0 +1,55 @@
+table 'euro jogadores'
+	lineageTag: 792c4233-b0a1-4167-8728-52fdeedbf32f
+
+	column nome
+		dataType: string
+		lineageTag: cd2060fc-476a-4030-a24d-10454d77f14e
+		summarizeBy: none
+		sourceColumn: nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_nascimento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 37f4e998-d54e-4a13-8517-618d06b13f0e
+		summarizeBy: none
+		sourceColumn: data_nascimento
+
+		variation Variation
+			isDefault
+			relationship: 16e345a7-6f36-4600-bb7a-ad12529f717b
+			defaultHierarchy: LocalDateTable_58d2cc0e-0c77-4914-93a1-e1e4a89c319e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column idjogador
+		dataType: int64
+		formatString: 0
+		lineageTag: cdb13346-2e68-4b34-977a-3ee120537b0d
+		summarizeBy: sum
+		sourceColumn: idjogador
+
+		annotation SummarizationSetBy = Automatic
+
+	column selecao
+		dataType: string
+		lineageTag: cb0fca5a-4294-4bcf-b4b2-73e6b118eee2
+		summarizeBy: none
+		sourceColumn: selecao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro jogadores' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_jogadores = Fonte{[Schema="euro",Item="jogadores"]}[Data]
+				in
+				    euro_jogadores
+
+	annotation PBI_ResultType = Table
+

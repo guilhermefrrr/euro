@@ -1,0 +1,67 @@
+table medidas
+	lineageTag: 3bfe475d-1a46-46e8-a514-9f2fbaf41449
+
+	measure 'Vit. pen.' = COALESCE(CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[pen_VD] = "V"), 0)
+		formatString: 0
+		lineageTag: 01949c6f-1a0d-4c86-8f61-1c3629bd237e
+
+	measure Derrotas = CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[VED] = "D")
+		formatString: 0
+		lineageTag: 1a308bfa-2296-4b69-9469-fcf0ab2d0b1a
+
+	measure Empates = CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[VED] = "E")
+		formatString: 0
+		lineageTag: 68311917-cdb3-4be1-91c9-4fc2449628f7
+
+	measure 'Média de gols' = DIVIDE(SUM('euro resultados'[gols_marcados]), COUNTROWS('euro jogos'))
+		lineageTag: a4f48999-7b60-484a-afa3-fafb1fa8a21b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Vitórias = CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[VED] = "V")
+		formatString: 0
+		lineageTag: 0a59df28-444b-48fe-9914-5cb18db005e5
+
+	measure 'Gols (tab. gols)' = COALESCE(CALCULATE(COUNTROWS('euro gols')), 0)
+		formatString: 0
+		lineageTag: 7adb5e78-464b-4185-9e5d-0e9119485dd6
+
+	measure Títulos = COALESCE(COUNTROWS('euro edições'), 0)
+		formatString: 0
+		lineageTag: 1d9c84db-6596-4ef1-ae20-4e291cea4ac3
+
+	measure 'Der. pen.' = COALESCE(CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[pen_VD] = "D"), 0)
+		formatString: 0
+		lineageTag: e5eff88a-9e88-4606-bce4-3e61922f83e9
+
+	measure 'Vit. pro.' = COALESCE(CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[pro_VD] = "V"), 0)
+		formatString: 0
+		lineageTag: 325e9983-0cd6-4778-9fcf-82de73ad8a9b
+
+	measure 'Der. pro.' = COALESCE(CALCULATE(COUNTROWS('euro resultados'), 'euro resultados'[pro_VD] = "D"), 0)
+		formatString: 0
+		lineageTag: 7163dc11-b081-4966-bfae-7085fa4186fb
+
+	measure Jogos = COALESCE(COUNTROWS('euro resultados'), 0)
+		formatString: 0
+		lineageTag: eba69f2a-cc37-4b4a-9f61-7d6a5cf4da64
+
+	measure 'Gols (tab. resultados)' = SUM('euro resultados'[gols_marcados])
+		formatString: 0
+		lineageTag: bfa70676-183d-4d9a-b325-6950a4b9c56e
+
+	measure 'Gols sof. (tab. resultados)' = SUM('euro resultados'[gols_sofridos])
+		formatString: 0
+		lineageTag: 9288ba87-16bc-49f0-b8e4-c09a227f1ba6
+
+	partition medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [medidas = _t]),
+				    #"Colunas Removidas" = Table.RemoveColumns(Fonte,{"medidas"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

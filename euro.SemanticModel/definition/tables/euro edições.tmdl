@@ -1,0 +1,48 @@
+table 'euro edições'
+	lineageTag: 230829b6-4210-4b81-ba4b-f1f8e762957c
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: e15af547-abb4-45ca-898e-5570c903f961
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column vice
+		dataType: string
+		lineageTag: 4c820871-9f77-47a1-b9cf-aabeaee0661c
+		summarizeBy: none
+		sourceColumn: vice
+
+		annotation SummarizationSetBy = Automatic
+
+	column idedicao
+		dataType: int64
+		formatString: 0
+		lineageTag: adb9e648-5ab1-46f5-9605-d66fff7a6b2c
+		summarizeBy: sum
+		sourceColumn: idedicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column campea
+		dataType: string
+		lineageTag: 688b77d9-eb0f-4810-bfa7-b148da7be288
+		summarizeBy: none
+		sourceColumn: campea
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro edições' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_edições = Fonte{[Schema="euro",Item="edições"]}[Data]
+				in
+				    euro_edições
+
+	annotation PBI_ResultType = Table
+

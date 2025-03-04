@@ -1,0 +1,40 @@
+table 'euro nomes atuais'
+	lineageTag: c1aed5ea-ad33-4457-a5a5-960fea8ac91c
+
+	column selecao
+		dataType: string
+		lineageTag: fb18bb39-05b9-47d7-b2b6-c3227a358a9a
+		summarizeBy: none
+		sourceColumn: selecao
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nomes atuais'
+		dataType: string
+		lineageTag: 077aa0c0-c5bf-47a9-b82f-6ff34981ccf1
+		summarizeBy: none
+		sourceColumn: nomes atuais
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro nomes atuais' = m
+		mode: import
+		source =
+				let
+				    Source = #"euro resultados",
+				    #"Removed Duplicates" = Table.Distinct(Source, {"selecao"}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Removed Duplicates",{"selecao"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Removed Other Columns", "selecao", "selecao - Copy"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"selecao - Copy", "nomes atuais"}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Renamed Columns","Iugoslávia","Sérvia",Replacer.ReplaceText,{"nomes atuais"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","Tchecoslováquia","Tchéquia",Replacer.ReplaceText,{"nomes atuais"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","União Soviética","Rússia",Replacer.ReplaceText,{"nomes atuais"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","Alemanha Ocidental","Alemanha",Replacer.ReplaceText,{"nomes atuais"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Comunidade dos Estados Independentes","Rússia",Replacer.ReplaceText,{"nomes atuais"})
+				in
+				    #"Replaced Value4"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

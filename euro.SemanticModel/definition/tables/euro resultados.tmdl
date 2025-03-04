@@ -1,0 +1,102 @@
+table 'euro resultados'
+	lineageTag: 6ff1d5bf-25e0-4765-9e4c-ca11f05861f5
+
+	column gols_marcados
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d2b7994-9ceb-4835-a3c4-69d1f6526966
+		summarizeBy: sum
+		sourceColumn: gols_marcados
+
+		annotation SummarizationSetBy = Automatic
+
+	column gols_sofridos
+		dataType: int64
+		formatString: 0
+		lineageTag: 821483a4-4ac6-4b07-b3c4-fcd067d61477
+		summarizeBy: sum
+		sourceColumn: gols_sofridos
+
+		annotation SummarizationSetBy = Automatic
+
+	column VED
+		dataType: string
+		lineageTag: cff536bb-f471-4505-a8e8-64a0476e4717
+		summarizeBy: none
+		sourceColumn: VED
+
+		annotation SummarizationSetBy = Automatic
+
+	column pro_VD
+		dataType: string
+		lineageTag: 827dfd99-fa29-4088-ba4f-ad42bd52b0d2
+		summarizeBy: none
+		sourceColumn: pro_VD
+
+		annotation SummarizationSetBy = Automatic
+
+	column diferença
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c848adb-c080-49d0-9b66-eee9bd26c07a
+		summarizeBy: sum
+		sourceColumn: diferença
+
+		annotation SummarizationSetBy = Automatic
+
+	column idresultado
+		dataType: int64
+		formatString: 0
+		lineageTag: 93cb76a5-c0f3-476b-b41d-d4b938e9b116
+		summarizeBy: sum
+		sourceColumn: idresultado
+
+		annotation SummarizationSetBy = Automatic
+
+	column idjogo
+		dataType: int64
+		formatString: 0
+		lineageTag: fadf1bdc-1132-4a83-8380-58f947165843
+		summarizeBy: none
+		sourceColumn: idjogo
+
+		annotation SummarizationSetBy = Automatic
+
+	column selecao
+		dataType: string
+		lineageTag: 5fc818d8-0692-4b48-8297-87f6e96b2310
+		summarizeBy: none
+		sourceColumn: selecao
+
+		annotation SummarizationSetBy = Automatic
+
+	column adversario
+		dataType: string
+		lineageTag: e06a15a8-d008-4d8d-988b-45ff67c1532e
+		summarizeBy: none
+		sourceColumn: adversario
+
+		annotation SummarizationSetBy = Automatic
+
+	column pen_VD
+		dataType: string
+		lineageTag: f729c000-6a01-4bc0-b2ec-85bd3071ba7c
+		summarizeBy: none
+		sourceColumn: pen_VD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'euro resultados' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_resultados = Fonte{[Schema="euro",Item="resultados"]}[Data],
+				    #"Personalização Adicionada" = Table.AddColumn(euro_resultados, "saldo", each [gols_marcados] - [gols_sofridos]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"saldo", Int64.Type}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"saldo", "diferença"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_ResultType = Table
+

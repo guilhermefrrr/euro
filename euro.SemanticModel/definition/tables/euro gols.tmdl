@@ -1,0 +1,186 @@
+table 'euro gols'
+	lineageTag: 2b917b09-eb34-455d-84aa-f01d64bde6e6
+
+	column seleção
+		dataType: string
+		lineageTag: d98f97c6-1cf2-4bcc-b296-1514e6fa668d
+		summarizeBy: none
+		sourceColumn: seleção
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_jogador
+		dataType: string
+		lineageTag: 234cd9a2-235b-4ba6-9ac3-f44c5422e4bc
+		summarizeBy: none
+		sourceColumn: nome_jogador
+
+		annotation SummarizationSetBy = Automatic
+
+	column contra
+		dataType: string
+		lineageTag: 770a032e-7284-4f5b-8633-d10419776a78
+		summarizeBy: none
+		sourceColumn: contra
+
+		annotation SummarizationSetBy = Automatic
+
+	column etapa
+		dataType: string
+		lineageTag: 1a038bbf-5259-402f-b7b5-2e46157ab9e7
+		summarizeBy: none
+		sourceColumn: etapa
+
+		annotation SummarizationSetBy = Automatic
+
+	column minuto
+		dataType: int64
+		formatString: 0
+		lineageTag: f531dbe6-3069-434f-a15d-da0df516f64b
+		summarizeBy: sum
+		sourceColumn: minuto
+
+		annotation SummarizationSetBy = Automatic
+
+	column placar_time
+		dataType: int64
+		formatString: 0
+		lineageTag: fd9a371b-d63c-4d1d-89eb-a4f6b1b8488c
+		summarizeBy: sum
+		sourceColumn: placar_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column momento_gol
+		dataType: string
+		lineageTag: e06006aa-3e03-4d8b-996f-4d26b517e1a0
+		summarizeBy: none
+		sourceColumn: momento_gol
+		sortByColumn: ordem_momento_gol
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordem_momento_gol
+		dataType: int64
+		formatString: 0
+		lineageTag: f76b23c0-9f3c-43f1-b81f-519c29aed74d
+		summarizeBy: sum
+		sourceColumn: ordem_momento_gol
+
+		annotation SummarizationSetBy = Automatic
+
+	column idgol
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b2594a9-11dd-47f0-8941-3826bdc67805
+		summarizeBy: sum
+		sourceColumn: idgol
+
+		annotation SummarizationSetBy = Automatic
+
+	column idjogo
+		dataType: int64
+		formatString: 0
+		lineageTag: c47ce313-5b9a-4e6f-8f9c-31f8c73f0dd5
+		summarizeBy: none
+		sourceColumn: idjogo
+
+		annotation SummarizationSetBy = Automatic
+
+	column idedicao
+		dataType: int64
+		formatString: 0
+		lineageTag: 31f1f84d-351f-4376-835e-280b341a6604
+		summarizeBy: sum
+		sourceColumn: idedicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column placar_adversario
+		dataType: int64
+		formatString: 0
+		lineageTag: 817c98b4-bffe-474b-9a8c-840b3210bf1a
+		summarizeBy: sum
+		sourceColumn: placar_adversario
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_nascimento_jogador
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ce132db1-2b26-46e1-9bbb-f3b728d0fab7
+		summarizeBy: none
+		sourceColumn: data_nascimento_jogador
+
+		variation Variation
+			isDefault
+			relationship: b76faad7-c7d4-44b7-8b98-fd1d502e61d8
+			defaultHierarchy: LocalDateTable_877ffdf3-d2f4-4fb5-8a52-4c3f1b2be1b5.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data_jogo
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2acacdb2-5912-42ca-8d1a-4951f18cb50c
+		summarizeBy: none
+		sourceColumn: data_jogo
+
+		variation Variation
+			isDefault
+			relationship: c98b975c-7775-4017-b213-e4396bb6397e
+			defaultHierarchy: LocalDateTable_b114a824-1c1b-4efe-a59b-117692a7b61f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column idade_jogador
+		dataType: double
+		lineageTag: 8c008ae9-0cc4-4bf1-b331-234f5a52bcc0
+		summarizeBy: sum
+		sourceColumn: idade_jogador
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column idade_jogador_anos
+		dataType: double
+		lineageTag: 412dd857-83db-4ff0-8255-b3250f75483e
+		summarizeBy: sum
+		sourceColumn: idade_jogador_anos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'euro gols' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    euro_gols = Fonte{[Schema="euro",Item="gols"]}[Data],
+				    #"Coluna Condicional Adicionada" = Table.AddColumn(euro_gols, "momento_gol", each if [minuto] <= 15 then "1-15" else if [minuto] <= 30 then "16-30" else if [minuto] <= 45 then "31-45" else if [etapa] = "1º tempo" then "45 mais" else if [minuto] <= 60 then "46-60" else if [minuto] <= 75 then "61-75" else if [minuto] <= 90 then "76-90" else if [etapa] = "2º tempo" then "90 mais" else if [minuto] <= 105 then "91-105" else if [etapa] = "1º tempo da prorrogação" then "105 mais" else if [minuto] <= 120 then "106-120" else if [etapa] = "2º tempo da prorrogação" then "120 mais" else "+++"),
+				    #"Coluna Condicional Adicionada1" = Table.AddColumn(#"Coluna Condicional Adicionada", "ordem_momento_gol", each if [momento_gol] = "1-15" then 1 else if [momento_gol] = "16-30" then 2 else if [momento_gol] = "31-45" then 3 else if [momento_gol] = "45 mais" then 4 else if [momento_gol] = "46-60" then 5 else if [momento_gol] = "61-75" then 6 else if [momento_gol] = "76-90" then 7 else if [momento_gol] = "90 mais" then 8 else if [momento_gol] = "91-105" then 9 else if [momento_gol] = "105 mais" then 10 else if [momento_gol] = "106-120" then 11 else if [momento_gol] = "120 mais" then 12 else null),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna Condicional Adicionada1",{{"ordem_momento_gol", Int64.Type}}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado", {"nome_jogador"}, #"euro jogadores", {"nome"}, "euro jogadores", JoinKind.LeftOuter),
+				    #"euro jogadores Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "euro jogadores", {"data_nascimento"}, {"euro jogadores.data_nascimento"}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"euro jogadores Expandido", each true),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"Linhas Filtradas", {"idjogo"}, #"euro jogos", {"idjogo"}, "euro jogos", JoinKind.LeftOuter),
+				    #"euro jogos Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "euro jogos", {"data"}, {"euro jogos.data"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"euro jogos Expandido",{{"euro jogadores.data_nascimento", "data_nascimento_jogador"}, {"euro jogos.data", "data_jogo"}}),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Colunas Renomeadas",{"idgol", "idjogo", "idedicao", "seleção", "nome_jogador", "contra", "etapa", "minuto", "placar_time", "placar_adversario", "momento_gol", "ordem_momento_gol", "data_jogo", "data_nascimento_jogador"}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Reordenadas", "idade_jogador", each [data_jogo] - [data_nascimento_jogador]),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"idade_jogador", type duration}}),
+				    #"Total de Anos Inseridos" = Table.AddColumn(#"Tipo Alterado1", "Total de Anos", each Duration.TotalDays([idade_jogador]) / 365, type number),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Total de Anos Inseridos",{{"Total de Anos", "idade_jogador_anos"}})
+				in
+				    #"Colunas Renomeadas1"
+
+	annotation PBI_ResultType = Table
+

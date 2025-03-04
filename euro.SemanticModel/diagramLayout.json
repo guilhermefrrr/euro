@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 25.275724347494247
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 597.38305001469382,
+            "y": 0
+          },
+          "nodeIndex": "euro gols",
+          "nodeLineageTag": "2b917b09-eb34-455d-84aa-f01d64bde6e6",
+          "size": {
+            "height": 333,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 936.38305001469382,
+            "y": 59.422348979922475
+          },
+          "nodeIndex": "euro jogadores",
+          "nodeLineageTag": "792c4233-b0a1-4167-8728-52fdeedbf32f",
+          "size": {
+            "height": 251,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 304.20156119318534,
+            "y": 0
+          },
+          "nodeIndex": "euro jogos",
+          "nodeLineageTag": "d5db7077-98e0-4523-a7b2-75ab26aeec10",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 9.9851107795978749
+          },
+          "nodeIndex": "euro resultados",
+          "nodeLineageTag": "6ff1d5bf-25e0-4765-9e4c-ca11f05861f5",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 288.12337236895024,
+            "y": 609.413985913508
+          },
+          "nodeIndex": "euro edições",
+          "nodeLineageTag": "230829b6-4210-4b81-ba4b-f1f8e762957c",
+          "size": {
+            "height": 183.90050574276052,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 472.49619747499577
+          },
+          "nodeIndex": "euro campeãs",
+          "nodeLineageTag": "da7e10db-8cbf-4c53-b9a2-fcc3882f63da",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1049.7321259710661,
+            "y": 499.5071583862408
+          },
+          "nodeIndex": "medidas",
+          "nodeLineageTag": "3bfe475d-1a46-46e8-a514-9f2fbaf41449",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 453.61578622754234,
+            "y": 443.2643262267818
+          },
+          "nodeIndex": "euro nomes atuais",
+          "nodeLineageTag": "c1aed5ea-ad33-4457-a5a5-960fea8ac91c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 63.287087723233995,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

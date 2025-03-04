@@ -1,0 +1,32 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["euro jogos","euro resultados","euro jogadores","euro gols","euro edições","euro campeãs","medidas","euro nomes atuais"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'euro jogos'
+ref table DateTableTemplate_08a58338-8880-408d-8ddc-435fa5846a9d
+ref table LocalDateTable_2f72da9f-1c63-4325-bbc7-73a0adbed36f
+ref table 'euro resultados'
+ref table 'euro jogadores'
+ref table LocalDateTable_58d2cc0e-0c77-4914-93a1-e1e4a89c319e
+ref table 'euro gols'
+ref table 'euro edições'
+ref table 'euro campeãs'
+ref table medidas
+ref table LocalDateTable_877ffdf3-d2f4-4fb5-8a52-4c3f1b2be1b5
+ref table LocalDateTable_b114a824-1c1b-4efe-a59b-117692a7b61f
+ref table 'euro nomes atuais'
+
+ref cultureInfo pt-BR
+
