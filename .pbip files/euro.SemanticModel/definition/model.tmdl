@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["euro jogos","euro resultados","euro jogadores","eu
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
+annotation PBIDesktopVersion = 2.140.1476.0 (25.02)+e8c6a85d1d09735c5c055c3244a60ff4076cd2cf
 
 annotation PBI_ProTooling = ["DevMode"]
 
