@@ -21,12 +21,12 @@ select * from gols where etapa = '2º tempo da prorrogação' and minuto < 106;
 
 # Verificando se o minuto do gol de um jogo é maior ou igual que o minuto do gol posterior
 with comp_min as
-(select *, lag(g.minuto) over(order by g.njogo) as min_gol_anterior from gols g), 
+(select *, lag(g.minuto) over(order by g.idjogo) as min_gol_anterior from gols g), 
 comp_jogo 
-as (select *, lag(g.njogo) over(order by g.njogo) as jogo_gol_anterior from gols g)
+as (select *, lag(g.idjogo) over(order by g.idjogo) as jogo_gol_anterior from gols g)
 select cm.*, cj.jogo_gol_anterior from comp_min cm join comp_jogo cj
-on cm.ngol = cj.ngol
-where cm.min_gol_anterior >= cm.minuto and cm.njogo = cj.jogo_gol_anterior;
+on cm.idgol = cj.idgol
+where cm.min_gol_anterior >= cm.minuto and cm.idjogo = cj.jogo_gol_anterior;
 
 # Verificando erros na tabela resultados
 select * from resultados where gols_marcados > gols_sofridos and VED = 'D';
