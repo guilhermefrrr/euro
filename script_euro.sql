@@ -40,19 +40,31 @@ SELECT * FROM gols WHERE etapa = '2º tempo' AND minuto < 45;
 SELECT * FROM gols WHERE etapa = '2º tempo da prorrogação' AND minuto < 106;
 
 -- Check if a goal's minute is greater or equal to the previous goal's minute in the same match
-WITH PreviousGoalMinute AS (
+-- Check if a goal's minute is greater or equal to the previous goal's minute in the same match, including periods (halves, extra time)
+WITH comp_min AS (
     SELECT *, 
-           LAG(minuto) OVER (ORDER BY idjogo) AS min_gol_anterior
-    FROM gols
+           LAG(g.minuto) OVER (ORDER BY g.idjogo) AS min_gol_anterior
+    FROM gols g
 ),
-PreviousGoalMatch AS (
-    SELECT *,
-           LAG(idjogo) OVER (ORDER BY idjogo) AS jogo_gol_anterior
-    FROM gols
+comp_jogo AS (
+    SELECT *, 
+           LAG(g.idjogo) OVER (ORDER BY g.idjogo) AS jogo_gol_anterior
+    FROM gols g
+),
+comp_etapa AS (
+    SELECT *, 
+           LAG(g.etapa) OVER (ORDER BY g.idjogo) AS etapa_gol_anterior
+    FROM gols g
 )
-SELECT cm.*, cj.jogo_gol_anterior
-FROM PreviousGoalMinute cm
-JOIN PreviousGoalMatch cj ON cm.idgol = cj.idgol
+SELECT 
+    cm.*, 
+    ce.etapa_gol_anterior, 
+    cj.jogo_gol_anterior
+FROM comp_min cm
+JOIN comp_jogo cj 
+    ON cm.idgol = cj.idgol
+JOIN comp_etapa ce 
+    ON ce.idgol = cj.idgol
 WHERE cm.min_gol_anterior >= cm.minuto
   AND cm.idjogo = cj.jogo_gol_anterior;
 
