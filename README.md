@@ -2,7 +2,9 @@
 
 Projeto de análise e visualização de dados sobre a história da Euro, a principal competição de seleções de futebol da Uefa. O projeto reúne informações sobre edições, partidas, resultados, gols e jogadores, com consultas SQL e um relatório interativo desenvolvido no Power BI.
 
-[**Acesse o relatório no Power BI**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
+## Acesse o relatório
+
+[**Clique aqui para acessar o relatório**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
 
 ## Objetivos
 
@@ -48,9 +50,3 @@ Essa estrutura facilita análises por seleção sem precisar separar a equipe ma
 - `dump_euro.sql`: arquivo de exportação do banco de dados.
 - `script_euro.sql`: consultas SQL, verificações de consistência e criação da view `resultados_atualizados`.
 - `.pbip-files/`: arquivos do projeto do Power BI.
-
-## Relatório
-
-O relatório foi desenvolvido no Power BI para explorar os dados históricos da Eurocopa por meio de visualizações interativas.
-
-[**Clique aqui para acessar o relatório**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
