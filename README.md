@@ -17,6 +17,7 @@ Projeto de análise e visualização de dados sobre a história da Euro, a princ
 - **SQL Server:** armazenamento, consulta e transformação dos dados.
 - **SQL:** consultas exploratórias, verificações de consistência e criação de uma view auxiliar.
 - **Power BI:** criação do relatório interativo e visualização dos dados.
+- **DAX:** criação de medidas e cálculos utilizados no modelo de dados e nas análises.
 
 ## Banco de dados e consultas SQL
 
