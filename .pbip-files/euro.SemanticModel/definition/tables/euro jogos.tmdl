@@ -149,7 +149,7 @@ table 'euro jogos'
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    Fonte = Sql.Database("DESKTOP-GUI\SQLEXPRESS", "euro"),
 				    euro_jogos = Fonte{[Schema="euro",Item="jogos"]}[Data],
 				    #"Personalização Adicionada" = Table.AddColumn(euro_jogos, "soma_gols", each [gols_seleção1] + [gols_seleção2]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"soma_gols", Int64.Type}}),

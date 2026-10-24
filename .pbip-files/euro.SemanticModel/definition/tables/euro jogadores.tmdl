@@ -46,10 +46,12 @@ table 'euro jogadores'
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "euro", [ReturnSingleDatabase=true]),
+				    Fonte = Sql.Database("DESKTOP-GUI\SQLEXPRESS", "euro"),
 				    euro_jogadores = Fonte{[Schema="euro",Item="jogadores"]}[Data]
 				in
 				    euro_jogadores
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
 

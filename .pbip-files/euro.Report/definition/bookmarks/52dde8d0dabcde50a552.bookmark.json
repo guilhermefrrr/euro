@@ -1,0 +1,698 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Indicador 1",
+  "name": "52dde8d0dabcde50a552",
+  "options": {
+    "targetVisualNames": [],
+    "suppressActiveSection": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "c57c2f60de72c5719a0b",
+    "sections": {
+      "c57c2f60de72c5719a0b": {
+        "visualContainers": {
+          "c7a94bacdeead17c31e0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "104bd31038ef37767386",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "momento_gol"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5b81eb70bb8b1b762908",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "euro gols"
+                            }
+                          },
+                          "Property": "momento_gol"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "momento_gol"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "momento_gol"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "71c57a24024160014da0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6df0dcaba08494916b6a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "nome_jogador"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c00ccb7cdfc093a3a5f6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "seleção"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "179d17eb2ca30d374d60",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "contra"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "94ed35245c4bcd36e055",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "fase"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "da4c1f3ed343d0795f9d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "seleção1"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6d24fc87117f6cb3d9a6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "euro jogos"
+                            }
+                          },
+                          "Property": "gols_seleção1"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "adab00f0fe8d22d02e1e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "seleção2"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8d35a0f87f8885266154",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "euro jogos"
+                            }
+                          },
+                          "Property": "gols_seleção2"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7297f3127f7b1f750aad",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "minuto"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7c5ec6c13427cccff1d0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "etapa"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c5b5a862869c3bf9af38",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "idedicao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "322ab23ada6d60df018f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "idgol"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "idgol"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "9b40f3cfab470ce133ce": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0c1969c9d3fac053cf21",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "478d7f0a08708aee6ae0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter99d472b5d522250ea05d",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "euro gols",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "e"
+                                    }
+                                  },
+                                  "Property": "contra"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "contra"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "b2805f5d341403aeb43e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "nome_jogador"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6593f5b554d1b2540724",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "euro gols"
+                            }
+                          },
+                          "Property": "nome_jogador"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0448a238c0fe209d0175",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro gols"
+                        }
+                      },
+                      "Property": "seleção"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "euro gols"
+                            }
+                          },
+                          "Property": "nome_jogador"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "14fc72614adb98849187": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter20b1fa7913ca20a11b08",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "euro jogos",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "e"
+                                        }
+                                      },
+                                      "Property": "fase"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'fase de grupos'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "fase"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "1e7ec27a381dc869feb9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "08481d9a7e81c07e461d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filterce7d0cb017c89d3ae602",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "euro jogos",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "e"
+                                    }
+                                  },
+                                  "Property": "fase"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'final'"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'final (desempate)'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "euro jogos"
+                        }
+                      },
+                      "Property": "fase"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "7cf148c161ce9572b93f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medidas"
+                        }
+                      },
+                      "Property": "Gols (tab. gols)"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
