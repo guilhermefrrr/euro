@@ -2,9 +2,7 @@
 
 Projeto de análise e visualização de dados sobre a história da Euro, a principal competição de seleções de futebol da Uefa. O projeto reúne informações sobre edições, partidas, resultados, gols e jogadores, com consultas SQL e um relatório interativo desenvolvido no Power BI.
 
-## Acesse o relatório
-
-[**Clique aqui para acessar o relatório**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
+[**Clique aqui para acessar o relatório no Power BI**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
 
 ## Objetivos
 
