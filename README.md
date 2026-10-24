@@ -1,6 +1,6 @@
 # Euro
 
-Projeto de análise e visualização de dados sobre a história da Eurocopa, a principal competição de seleções de futebol da UEFA. O projeto reúne informações sobre edições, partidas, resultados, gols e jogadores, com consultas SQL e um relatório interativo desenvolvido no Power BI.
+Projeto de análise e visualização de dados sobre a história da Euro, a principal competição de seleções de futebol da Uefa. O projeto reúne informações sobre edições, partidas, resultados, gols e jogadores, com consultas SQL e um relatório interativo desenvolvido no Power BI.
 
 [**Acesse o relatório no Power BI**](https://app.powerbi.com/view?r=eyJrIjoiMGY4MWY1MTUtYzY1ZS00MDU5LTgzNDMtYmQxYWM0NzRkNTg1IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
 
@@ -8,7 +8,7 @@ Projeto de análise e visualização de dados sobre a história da Eurocopa, a p
 
 - Organizar dados históricos das edições da Eurocopa.
 - Analisar partidas, resultados e gols ao longo da história do torneio.
-- Explorar informações dos jogadores que participaram da competição.
+- Explorar informações dos jogadores que já marcaram gol na competição.
 - Utilizar SQL para consultar, validar e transformar os dados.
 - Desenvolver visualizações no Power BI para facilitar a análise dos dados.
 
