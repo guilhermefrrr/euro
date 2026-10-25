@@ -1,4 +1,4 @@
-# Euro
+# Todos os gols da história da Uefa Euro
 
 Projeto de análise e visualização de dados sobre a história da Euro, a principal competição de seleções de futebol da Uefa. O projeto reúne informações sobre edições, partidas, resultados, gols e jogadores, com consultas SQL e um relatório interativo desenvolvido no Power BI.
 
