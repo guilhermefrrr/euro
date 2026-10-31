@@ -4,10 +4,10 @@
   "position": {
     "x": 955.79828734538535,
     "y": 436.97811607992389,
-    "z": 5000,
+    "z": 4000,
     "height": 280.60133206470027,
     "width": 299.60038058991438,
-    "tabOrder": 5000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "tableEx",
@@ -92,16 +92,21 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "euro jogos"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "euro jogos"
+                      }
+                    },
+                    "Property": "idjogo"
                   }
                 },
-                "Property": "país"
+                "Function": 5
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }

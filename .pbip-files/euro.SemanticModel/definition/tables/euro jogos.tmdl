@@ -140,6 +140,7 @@ table 'euro jogos'
 	column cidade_país
 		dataType: string
 		lineageTag: 5c837163-5ce0-4fe3-877f-70492fe10e93
+		dataCategory: Place
 		summarizeBy: none
 		sourceColumn: cidade_país
 

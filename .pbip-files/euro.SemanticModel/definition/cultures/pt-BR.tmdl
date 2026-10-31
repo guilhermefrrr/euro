@@ -2,7 +2,7 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "3.5.0",
+			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
 			    "euro_jogo": {
@@ -135,7 +135,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "euro_jogo.data.variation.hierarquia_de_data": {
+			    "euro_jogo.data.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogos",
@@ -223,7 +223,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo.data.variation.hierarquia_de_data.ano": {
+			    "euro_jogo.data.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogos",
@@ -317,7 +317,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo.data.variation.hierarquia_de_data.trimestre": {
+			    "euro_jogo.data.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogos",
@@ -411,7 +411,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo.data.variation.hierarquia_de_data.mê": {
+			    "euro_jogo.data.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogos",
@@ -505,7 +505,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo.data.variation.hierarquia_de_data.dia": {
+			    "euro_jogo.data.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogos",
@@ -1185,7 +1185,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			    "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogadores",
@@ -1273,7 +1273,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano": {
+			    "euro_jogadore.data_nascimento.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogadores",
@@ -1367,7 +1367,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			    "euro_jogadore.data_nascimento.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogadores",
@@ -1461,7 +1461,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê": {
+			    "euro_jogadore.data_nascimento.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogadores",
@@ -1555,7 +1555,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia": {
+			    "euro_jogadore.data_nascimento.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro jogadores",
@@ -1953,7 +1953,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.vitórias": {
+			    "medida.vitórias": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -1969,7 +1969,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.empates": {
+			    "medida.empates": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -1985,7 +1985,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.derrotas": {
+			    "medida.derrotas": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -2148,7 +2148,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_ediçõe.nº_títulos": {
+			    "medida.títulos": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -2195,7 +2195,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_ediçõe.nº_gols": {
+			    "medida.gols_tab__gols": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -2568,7 +2568,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.média_de_gols": {
+			    "medida.média_de_gols": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -2584,7 +2584,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado.venc__pen_": {
+			    "medida.vit__pen_": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -2703,7 +2703,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano": {
+			    "euro_gol.data_nascimento_jogador.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -2797,7 +2797,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			    "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -2985,7 +2985,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre": {
+			    "euro_gol.data_nascimento_jogador.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3079,7 +3079,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê": {
+			    "euro_gol.data_nascimento_jogador.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3173,7 +3173,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia": {
+			    "euro_gol.data_nascimento_jogador.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3373,7 +3373,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			    "euro_gol.data_jogo.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3461,7 +3461,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_jogo.variation.hierarquia_de_data.ano": {
+			    "euro_gol.data_jogo.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3555,7 +3555,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre": {
+			    "euro_gol.data_jogo.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3649,7 +3649,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_jogo.variation.hierarquia_de_data.mê": {
+			    "euro_gol.data_jogo.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3743,7 +3743,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol.data_jogo.variation.hierarquia_de_data.dia": {
+			    "euro_gol.data_jogo.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "euro gols",
@@ -3893,7 +3893,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida.nº_jogos": {
+			    "medida.jogos": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medidas",
@@ -3961,8 +3961,25 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "place": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Cidade, país": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Location"
 			    },
 			    "euro_nomes_atuais": {
 			      "Definition": {
@@ -4079,20 +4096,20 @@ cultureInfo pt-BR
 			    }
 			  },
 			  "Relationships": {
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_mê_has_euro_gol_data_jogo_variation_hierarquia_de_data_dia": {
+			    "euro_gol_data_jogo_mê_has_euro_gol_data_jogo_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_jogo.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_jogo.mê"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.dia": {
+			        "euro_gol.data_jogo.dia": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_gol.data_jogo.dia"
 			          }
 			        }
 			      },
@@ -4100,10 +4117,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_jogo.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4113,10 +4130,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_jogo.dia"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4126,7 +4143,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_jogo.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -4136,7 +4153,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4145,20 +4162,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_trimestre_has_euro_gol_data_jogo_variation_hierarquia_de_data_mê": {
+			    "euro_gol_data_jogo_trimestre_has_euro_gol_data_jogo_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_jogo.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_jogo.trimestre"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_jogo.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_jogo.mê"
 			          }
 			        }
 			      },
@@ -4166,10 +4183,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4179,10 +4196,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4192,7 +4209,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -4202,7 +4219,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4211,20 +4228,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_ano_has_euro_gol_data_jogo_variation_hierarquia_de_data_trimestre": {
+			    "euro_gol_data_jogo_ano_has_euro_gol_data_jogo_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.ano": {
+			        "euro_gol.data_jogo.ano": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_gol.data_jogo.ano"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_jogo.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_jogo.trimestre"
 			          }
 			        }
 			      },
@@ -4232,10 +4249,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_jogo.ano"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4245,10 +4262,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_jogo.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4258,7 +4275,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -4268,7 +4285,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_jogo.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4277,20 +4294,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_has_dia": {
+			    "euro_gol_data_jogo_hierarquia_de_data_has_euro_gol_data_jogo_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			        "euro_gol.data_jogo.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_jogo.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.dia": {
+			        "euro_gol.data_jogo.dia": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_gol.data_jogo.dia"
 			          }
 			        }
 			      },
@@ -4298,10 +4315,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_jogo.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_jogo.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4310,20 +4327,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_has_mê": {
+			    "euro_gol_data_jogo_hierarquia_de_data_has_euro_gol_data_jogo_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			        "euro_gol.data_jogo.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_jogo.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_jogo.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_jogo.mê"
 			          }
 			        }
 			      },
@@ -4331,10 +4348,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_jogo.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_jogo.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4343,20 +4360,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_has_trimestre": {
+			    "euro_gol_data_jogo_hierarquia_de_data_has_euro_gol_data_jogo_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			        "euro_gol.data_jogo.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_jogo.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_jogo.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_jogo.trimestre"
 			          }
 			        }
 			      },
@@ -4364,10 +4381,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_jogo.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_jogo.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4376,20 +4393,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_variation_hierarquia_de_data_has_ano": {
+			    "euro_gol_data_jogo_hierarquia_de_data_has_euro_gol_data_jogo_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			        "euro_gol.data_jogo.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_jogo.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data.ano": {
+			        "euro_gol.data_jogo.ano": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_gol.data_jogo.ano"
 			          }
 			        }
 			      },
@@ -4397,10 +4414,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_jogo.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_jogo.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4409,7 +4426,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_jogo_has_variation_hierarquia_de_data": {
+			    "euro_gol_data_jogo_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
@@ -4420,9 +4437,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_gol.data_jogo"
 			          }
 			        },
-			        "euro_gol.data_jogo.variation.hierarquia_de_data": {
+			        "euro_gol.data_jogo.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_jogo.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -4433,7 +4450,7 @@ cultureInfo pt-BR
 			              "Role": "euro_gol.data_jogo"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_jogo.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_jogo.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -4442,20 +4459,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_mê_has_euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_dia": {
+			    "euro_gol_data_nascimento_jogador_mê_has_euro_gol_data_nascimento_jogador_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_nascimento_jogador.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_nascimento_jogador.mê"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia": {
+			        "euro_gol.data_nascimento_jogador.dia": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_gol.data_nascimento_jogador.dia"
 			          }
 			        }
 			      },
@@ -4463,10 +4480,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_nascimento_jogador.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4476,10 +4493,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_nascimento_jogador.dia"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4489,7 +4506,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_nascimento_jogador.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -4499,7 +4516,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4508,20 +4525,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_trimestre_has_euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_mê": {
+			    "euro_gol_data_nascimento_jogador_trimestre_has_euro_gol_data_nascimento_jogador_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_nascimento_jogador.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_nascimento_jogador.trimestre"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_nascimento_jogador.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_nascimento_jogador.mê"
 			          }
 			        }
 			      },
@@ -4529,10 +4546,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4542,10 +4559,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4555,7 +4572,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -4565,7 +4582,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4574,20 +4591,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_ano_has_euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_trimestre": {
+			    "euro_gol_data_nascimento_jogador_ano_has_euro_gol_data_nascimento_jogador_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano": {
+			        "euro_gol.data_nascimento_jogador.ano": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_gol.data_nascimento_jogador.ano"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_nascimento_jogador.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_nascimento_jogador.trimestre"
 			          }
 			        }
 			      },
@@ -4595,10 +4612,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_nascimento_jogador.ano"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4608,10 +4625,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_nascimento_jogador.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4621,7 +4638,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -4631,7 +4648,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_nascimento_jogador.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4640,20 +4657,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_has_dia": {
+			    "euro_gol_data_nascimento_jogador_hierarquia_de_data_has_euro_gol_data_nascimento_jogador_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			        "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia": {
+			        "euro_gol.data_nascimento_jogador.dia": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_gol.data_nascimento_jogador.dia"
 			          }
 			        }
 			      },
@@ -4661,10 +4678,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.dia"
+			              "Role": "euro_gol.data_nascimento_jogador.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4673,20 +4690,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_has_mê": {
+			    "euro_gol_data_nascimento_jogador_hierarquia_de_data_has_euro_gol_data_nascimento_jogador_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			        "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê": {
+			        "euro_gol.data_nascimento_jogador.mê": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_gol.data_nascimento_jogador.mê"
 			          }
 			        }
 			      },
@@ -4694,10 +4711,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.mê"
+			              "Role": "euro_gol.data_nascimento_jogador.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4706,20 +4723,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_has_trimestre": {
+			    "euro_gol_data_nascimento_jogador_hierarquia_de_data_has_euro_gol_data_nascimento_jogador_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			        "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre": {
+			        "euro_gol.data_nascimento_jogador.trimestre": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_gol.data_nascimento_jogador.trimestre"
 			          }
 			        }
 			      },
@@ -4727,10 +4744,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_gol.data_nascimento_jogador.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4739,20 +4756,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_variation_hierarquia_de_data_has_ano": {
+			    "euro_gol_data_nascimento_jogador_hierarquia_de_data_has_euro_gol_data_nascimento_jogador_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			        "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano": {
+			        "euro_gol.data_nascimento_jogador.ano": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_gol.data_nascimento_jogador.ano"
 			          }
 			        }
 			      },
@@ -4760,10 +4777,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data.ano"
+			              "Role": "euro_gol.data_nascimento_jogador.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4772,7 +4789,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_data_nascimento_jogador_has_variation_hierarquia_de_data": {
+			    "euro_gol_data_nascimento_jogador_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
@@ -4783,9 +4800,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_gol.data_nascimento_jogador"
 			          }
 			        },
-			        "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data": {
+			        "euro_gol.data_nascimento_jogador.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			            "Entity": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -4796,7 +4813,7 @@ cultureInfo pt-BR
 			              "Role": "euro_gol.data_nascimento_jogador"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.data_nascimento_jogador.variation.hierarquia_de_data"
+			              "Role": "euro_gol.data_nascimento_jogador.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -4805,20 +4822,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_mê_has_euro_jogadore_data_nascimento_variation_hierarquia_de_data_dia": {
+			    "euro_jogadore_data_nascimento_mê_has_euro_jogadore_data_nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "euro_jogadore.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogadore.data_nascimento.mê"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia": {
+			        "euro_jogadore.data_nascimento.dia": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_jogadore.data_nascimento.dia"
 			          }
 			        }
 			      },
@@ -4826,10 +4843,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogadore.data_nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -4839,10 +4856,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogadore.data_nascimento.dia"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4852,7 +4869,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogadore.data_nascimento.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -4862,7 +4879,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4871,20 +4888,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_trimestre_has_euro_jogadore_data_nascimento_variation_hierarquia_de_data_mê": {
+			    "euro_jogadore_data_nascimento_trimestre_has_euro_jogadore_data_nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogadore.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogadore.data_nascimento.trimestre"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "euro_jogadore.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogadore.data_nascimento.mê"
 			          }
 			        }
 			      },
@@ -4892,10 +4909,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -4905,10 +4922,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4918,7 +4935,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -4928,7 +4945,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4937,20 +4954,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_ano_has_euro_jogadore_data_nascimento_variation_hierarquia_de_data_trimestre": {
+			    "euro_jogadore_data_nascimento_ano_has_euro_jogadore_data_nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano": {
+			        "euro_jogadore.data_nascimento.ano": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_jogadore.data_nascimento.ano"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogadore.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogadore.data_nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -4958,10 +4975,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogadore.data_nascimento.ano"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -4971,10 +4988,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogadore.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -4984,7 +5001,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -4994,7 +5011,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogadore.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -5003,20 +5020,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_has_dia": {
+			    "euro_jogadore_data_nascimento_hierarquia_de_data_has_euro_jogadore_data_nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			        "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia": {
+			        "euro_jogadore.data_nascimento.dia": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_jogadore.data_nascimento.dia"
 			          }
 			        }
 			      },
@@ -5024,10 +5041,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogadore.data_nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -5036,20 +5053,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_has_mê": {
+			    "euro_jogadore_data_nascimento_hierarquia_de_data_has_euro_jogadore_data_nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			        "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "euro_jogadore.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogadore.data_nascimento.mê"
 			          }
 			        }
 			      },
@@ -5057,10 +5074,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogadore.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -5069,20 +5086,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_has_trimestre": {
+			    "euro_jogadore_data_nascimento_hierarquia_de_data_has_euro_jogadore_data_nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			        "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogadore.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogadore.data_nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -5090,10 +5107,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogadore.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5102,20 +5119,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_variation_hierarquia_de_data_has_ano": {
+			    "euro_jogadore_data_nascimento_hierarquia_de_data_has_euro_jogadore_data_nascimento_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			        "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano": {
+			        "euro_jogadore.data_nascimento.ano": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_jogadore.data_nascimento.ano"
 			          }
 			        }
 			      },
@@ -5123,10 +5140,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogadore.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -5135,7 +5152,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogadore_data_nascimento_has_variation_hierarquia_de_data": {
+			    "euro_jogadore_data_nascimento_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogadores"
 			      },
@@ -5146,9 +5163,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_jogadore.data_nascimento"
 			          }
 			        },
-			        "euro_jogadore.data_nascimento.variation.hierarquia_de_data": {
+			        "euro_jogadore.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -5159,7 +5176,7 @@ cultureInfo pt-BR
 			              "Role": "euro_jogadore.data_nascimento"
 			            },
 			            "Object": {
-			              "Role": "euro_jogadore.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "euro_jogadore.data_nascimento.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -5168,20 +5185,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_mê_has_euro_jogo_data_variation_hierarquia_de_data_dia": {
+			    "euro_jogo_data_mê_has_euro_jogo_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data.mê": {
+			        "euro_jogo.data.mê": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogo.data.mê"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.dia": {
+			        "euro_jogo.data.dia": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_jogo.data.dia"
 			          }
 			        }
 			      },
@@ -5189,10 +5206,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogo.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -5202,10 +5219,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogo.data.dia"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -5215,7 +5232,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogo.data.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -5225,7 +5242,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -5234,20 +5251,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_trimestre_has_euro_jogo_data_variation_hierarquia_de_data_mê": {
+			    "euro_jogo_data_trimestre_has_euro_jogo_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogo.data.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogo.data.trimestre"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.mê": {
+			        "euro_jogo.data.mê": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogo.data.mê"
 			          }
 			        }
 			      },
@@ -5255,10 +5272,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -5268,10 +5285,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5281,7 +5298,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -5291,7 +5308,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5300,20 +5317,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_ano_has_euro_jogo_data_variation_hierarquia_de_data_trimestre": {
+			    "euro_jogo_data_ano_has_euro_jogo_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data.ano": {
+			        "euro_jogo.data.ano": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_jogo.data.ano"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogo.data.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogo.data.trimestre"
 			          }
 			        }
 			      },
@@ -5321,10 +5338,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogo.data.ano"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5334,10 +5351,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogo.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -5347,7 +5364,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -5357,7 +5374,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogo.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -5366,20 +5383,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_has_dia": {
+			    "euro_jogo_data_hierarquia_de_data_has_euro_jogo_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data": {
+			        "euro_jogo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data"
+			            "Entity": "euro_jogo.data.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.dia": {
+			        "euro_jogo.data.dia": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			            "Entity": "euro_jogo.data.dia"
 			          }
 			        }
 			      },
@@ -5387,10 +5404,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data"
+			              "Role": "euro_jogo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.dia"
+			              "Role": "euro_jogo.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -5399,20 +5416,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_has_mê": {
+			    "euro_jogo_data_hierarquia_de_data_has_euro_jogo_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data": {
+			        "euro_jogo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data"
+			            "Entity": "euro_jogo.data.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.mê": {
+			        "euro_jogo.data.mê": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			            "Entity": "euro_jogo.data.mê"
 			          }
 			        }
 			      },
@@ -5420,10 +5437,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data"
+			              "Role": "euro_jogo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.mê"
+			              "Role": "euro_jogo.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -5432,20 +5449,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_has_trimestre": {
+			    "euro_jogo_data_hierarquia_de_data_has_euro_jogo_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data": {
+			        "euro_jogo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data"
+			            "Entity": "euro_jogo.data.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.trimestre": {
+			        "euro_jogo.data.trimestre": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "euro_jogo.data.trimestre"
 			          }
 			        }
 			      },
@@ -5453,10 +5470,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data"
+			              "Role": "euro_jogo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "euro_jogo.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5465,20 +5482,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_variation_hierarquia_de_data_has_ano": {
+			    "euro_jogo_data_hierarquia_de_data_has_euro_jogo_data_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_jogo.data.variation.hierarquia_de_data": {
+			        "euro_jogo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data"
+			            "Entity": "euro_jogo.data.hierarquia_de_data"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data.ano": {
+			        "euro_jogo.data.ano": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			            "Entity": "euro_jogo.data.ano"
 			          }
 			        }
 			      },
@@ -5486,10 +5503,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data"
+			              "Role": "euro_jogo.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data.ano"
+			              "Role": "euro_jogo.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -5498,7 +5515,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_data_has_variation_hierarquia_de_data": {
+			    "euro_jogo_data_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
@@ -5509,9 +5526,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_jogo.data"
 			          }
 			        },
-			        "euro_jogo.data.variation.hierarquia_de_data": {
+			        "euro_jogo.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "euro_jogo.data.variation.hierarquia_de_data"
+			            "Entity": "euro_jogo.data.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -5522,7 +5539,7 @@ cultureInfo pt-BR
 			              "Role": "euro_jogo.data"
 			            },
 			            "Object": {
-			              "Role": "euro_jogo.data.variation.hierarquia_de_data"
+			              "Role": "euro_jogo.data.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -6018,7 +6035,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_medida_nº_jogos": {
+			    "euro_resultado_has_medida_jogos": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -6029,9 +6046,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "medida.nº_jogos": {
+			        "medida.jogos": {
 			          "Target": {
-			            "Entity": "medida.nº_jogos"
+			            "Entity": "medida.jogos"
 			          }
 			        }
 			      },
@@ -6042,7 +6059,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "medida.nº_jogos"
+			              "Role": "medida.jogos"
 			            }
 			          },
 			          "State": "Generated",
@@ -6282,7 +6299,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_venc__pen_": {
+			    "euro_resultado_has_medida_vit__pen_": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -6293,9 +6310,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "euro_resultado.venc__pen_": {
+			        "medida.vit__pen_": {
 			          "Target": {
-			            "Entity": "euro_resultado.venc__pen_"
+			            "Entity": "medida.vit__pen_"
 			          }
 			        }
 			      },
@@ -6306,7 +6323,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "euro_resultado.venc__pen_"
+			              "Role": "medida.vit__pen_"
 			            }
 			          },
 			          "State": "Generated",
@@ -6315,7 +6332,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_euro_gol_média_de_gols": {
+			    "euro_resultado_has_medida_média_de_gols": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -6326,9 +6343,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "euro_gol.média_de_gols": {
+			        "medida.média_de_gols": {
 			          "Target": {
-			            "Entity": "euro_gol.média_de_gols"
+			            "Entity": "medida.média_de_gols"
 			          }
 			        }
 			      },
@@ -6339,7 +6356,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.média_de_gols"
+			              "Role": "medida.média_de_gols"
 			            }
 			          },
 			          "State": "Generated",
@@ -6348,7 +6365,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_jogo_has_euro_gol_média_de_gols": {
+			    "euro_jogo_has_medida_média_de_gols": {
 			      "Binding": {
 			        "ConceptualEntity": "euro jogos"
 			      },
@@ -6359,9 +6376,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_jogo"
 			          }
 			        },
-			        "euro_gol.média_de_gols": {
+			        "medida.média_de_gols": {
 			          "Target": {
-			            "Entity": "euro_gol.média_de_gols"
+			            "Entity": "medida.média_de_gols"
 			          }
 			        }
 			      },
@@ -6372,7 +6389,7 @@ cultureInfo pt-BR
 			              "Role": "euro_jogo"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.média_de_gols"
+			              "Role": "medida.média_de_gols"
 			            }
 			          },
 			          "State": "Generated",
@@ -6744,7 +6761,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_gol_has_euro_ediçõe_nº_gols": {
+			    "euro_gol_has_medida_gols_tab__gols": {
 			      "Binding": {
 			        "ConceptualEntity": "euro gols"
 			      },
@@ -6755,9 +6772,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_gol"
 			          }
 			        },
-			        "euro_ediçõe.nº_gols": {
+			        "medida.gols_tab__gols": {
 			          "Target": {
-			            "Entity": "euro_ediçõe.nº_gols"
+			            "Entity": "medida.gols_tab__gols"
 			          }
 			        }
 			      },
@@ -6768,7 +6785,7 @@ cultureInfo pt-BR
 			              "Role": "euro_gol"
 			            },
 			            "Object": {
-			              "Role": "euro_ediçõe.nº_gols"
+			              "Role": "medida.gols_tab__gols"
 			            }
 			          },
 			          "State": "Generated",
@@ -6810,7 +6827,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_ediçõe_has_nº_títulos": {
+			    "euro_ediçõe_has_medida_títulos": {
 			      "Binding": {
 			        "ConceptualEntity": "euro edições"
 			      },
@@ -6821,9 +6838,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_ediçõe"
 			          }
 			        },
-			        "euro_ediçõe.nº_títulos": {
+			        "medida.títulos": {
 			          "Target": {
-			            "Entity": "euro_ediçõe.nº_títulos"
+			            "Entity": "medida.títulos"
 			          }
 			        }
 			      },
@@ -6834,7 +6851,7 @@ cultureInfo pt-BR
 			              "Role": "euro_ediçõe"
 			            },
 			            "Object": {
-			              "Role": "euro_ediçõe.nº_títulos"
+			              "Role": "medida.títulos"
 			            }
 			          },
 			          "State": "Generated",
@@ -6929,7 +6946,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_euro_gol_derrotas": {
+			    "euro_resultado_has_medida_derrotas": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -6940,9 +6957,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "euro_gol.derrotas": {
+			        "medida.derrotas": {
 			          "Target": {
-			            "Entity": "euro_gol.derrotas"
+			            "Entity": "medida.derrotas"
 			          }
 			        }
 			      },
@@ -6953,7 +6970,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.derrotas"
+			              "Role": "medida.derrotas"
 			            }
 			          },
 			          "State": "Generated",
@@ -6962,7 +6979,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_euro_gol_empates": {
+			    "euro_resultado_has_medida_empates": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -6973,9 +6990,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "euro_gol.empates": {
+			        "medida.empates": {
 			          "Target": {
-			            "Entity": "euro_gol.empates"
+			            "Entity": "medida.empates"
 			          }
 			        }
 			      },
@@ -6986,7 +7003,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.empates"
+			              "Role": "medida.empates"
 			            }
 			          },
 			          "State": "Generated",
@@ -6995,7 +7012,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_euro_gol_vitórias": {
+			    "euro_resultado_has_medida_vitórias": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
 			      },
@@ -7006,9 +7023,9 @@ cultureInfo pt-BR
 			            "Entity": "euro_resultado"
 			          }
 			        },
-			        "euro_gol.vitórias": {
+			        "medida.vitórias": {
 			          "Target": {
-			            "Entity": "euro_gol.vitórias"
+			            "Entity": "medida.vitórias"
 			          }
 			        }
 			      },
@@ -7019,7 +7036,7 @@ cultureInfo pt-BR
 			              "Role": "euro_resultado"
 			            },
 			            "Object": {
-			              "Role": "euro_gol.vitórias"
+			              "Role": "medida.vitórias"
 			            }
 			          },
 			          "State": "Generated",
@@ -7938,6 +7955,56 @@ cultureInfo pt-BR
 			          "ID": "euro_jogo_have_fases"
 			        }
 			      ]
+			    },
+			    "euro_jogo_in_cidade_país": {
+			      "Binding": {
+			        "ConceptualEntity": "euro jogos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "euro_jogo": {
+			          "Target": {
+			            "Entity": "euro_jogo"
+			          }
+			        },
+			        "euro_jogo.cidade_país": {
+			          "Target": {
+			            "Entity": "euro_jogo.cidade_país"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "euro_jogo.cidade_país"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "euro_jogo"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "euro_jogo.cidade_país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "euro_jogo_are_in_cidade_país"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
 			    }
 			  }
 			}

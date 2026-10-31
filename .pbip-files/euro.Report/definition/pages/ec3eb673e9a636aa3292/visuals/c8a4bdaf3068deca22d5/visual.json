@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "ee042f24eed303506230",
+  "name": "c8a4bdaf3068deca22d5",
   "position": {
-    "x": 439.90104662226452,
-    "y": 436.97811607992389,
-    "z": 4000,
-    "height": 280.60133206470027,
-    "width": 480.82207421503335,
-    "tabOrder": 4000
+    "x": 440.219727728684,
+    "y": 436.55122999761164,
+    "z": 11000,
+    "height": 280.028660138524,
+    "width": 503.80702173393837,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "azureMap",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "euro jogos.cidade_país",
-              "nativeQueryRef": "cidade_país",
-              "active": true
+              "nativeQueryRef": "Cidade, país",
+              "active": true,
+              "displayName": "Cidade, país"
             }
           ]
         },
@@ -44,13 +45,13 @@
                           "Entity": "euro jogos"
                         }
                       },
-                      "Property": "cidade"
+                      "Property": "cidade_país"
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonNull(euro jogos.cidade)",
+              "queryRef": "CountNonNull(euro jogos.cidade_país)",
               "nativeQueryRef": "Número de jogos",
               "displayName": "Número de jogos"
             }
@@ -62,10 +63,80 @@
       "mapControls": [
         {
           "properties": {
+            "zoom": {
+              "expr": {
+                "Literal": {
+                  "Value": "2.07D"
+                }
+              }
+            },
+            "centerLatitude": {
+              "expr": {
+                "Literal": {
+                  "Value": "49.860792332910165D"
+                }
+              }
+            },
+            "centerLongitude": {
+              "expr": {
+                "Literal": {
+                  "Value": "20.348580360412598D"
+                }
+              }
+            },
             "defaultStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "'road'"
+                  "Value": "'grayscale_light'"
+                }
+              }
+            },
+            "worldWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showCountryRegionBorders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAdminDistrict2Borders": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showBuildingFootprints": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showRoadDetails": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showNavigationControls": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -76,14 +147,7 @@
                 }
               }
             },
-            "showNavigationControls": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "showSelectionControl": {
+            "showAdminDistrictBorders": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -97,10 +161,10 @@
                 }
               }
             },
-            "zoom": {
+            "showSelectionControl": {
               "expr": {
                 "Literal": {
-                  "Value": "-0.92D"
+                  "Value": "false"
                 }
               }
             }
@@ -117,52 +181,64 @@
                 }
               }
             },
-            "bubbleRadius": {
+            "iconId": {
               "expr": {
                 "Literal": {
-                  "Value": "4L"
-                }
-              }
-            },
-            "minBubbleRadius": {
-              "expr": {
-                "Literal": {
-                  "Value": "4L"
+                  "Value": "'Location'"
                 }
               }
             },
             "maxRadius": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "30L"
                 }
               }
             },
-            "markerRangeType": {
+            "minBubbleRadius": {
               "expr": {
                 "Literal": {
-                  "Value": "'auto'"
+                  "Value": "2L"
                 }
               }
             },
-            "bubbleStrokeWidth": {
+            "markerRotation": {
               "expr": {
                 "Literal": {
-                  "Value": "1L"
+                  "Value": "5D"
                 }
               }
             },
-            "autoStrokeColor": {
+            "borderShow": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
-            },
-            "layerPosition": {
+            }
+          }
+        }
+      ],
+      "referenceLayer": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "''"
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "tileLayer": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -187,14 +263,36 @@
       "background": [
         {
           "properties": {
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#143CDB'"
-                    }
-                  }
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -210,11 +308,17 @@
                   "Value": "true"
                 }
               }
-            },
-            "type": {
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Default'"
+                  "Value": "true"
                 }
               }
             }
