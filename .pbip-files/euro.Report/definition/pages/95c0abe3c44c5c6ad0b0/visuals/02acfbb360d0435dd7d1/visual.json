@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "02acfbb360d0435dd7d1",
   "position": {
-    "x": 169.52997145575642,
-    "y": 128.60894386298764,
+    "x": 170.15494396891071,
+    "y": 128.98842526675489,
     "z": 0,
-    "height": 213.37392959086586,
-    "width": 1085.8686964795434,
+    "height": 170.15494396891071,
+    "width": 1075.8183554163386,
     "tabOrder": 0
   },
   "visual": {
@@ -431,5 +431,140 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "27a8f7b0132b9dd3a46e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro nomes atuais"
+              }
+            },
+            "Property": "nomes atuais"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d8ec64aa4ccbd5477bcc",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "euro resultados"
+                  }
+                },
+                "Property": "idjogo"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "762fa6e0984d88ead796",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Vitórias"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0fac38eab9a0d03a5d14",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Empates"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "520e9eac23d5b026251b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Derrotas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "024043b7104874b883b0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Vit. pro."
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7c873b5c10d88541685e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Der. pro."
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2563c9712b47bb087b6b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Vit. pen."
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4d81b3d08ce7627e8821",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Der. pen."
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

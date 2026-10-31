@@ -22,7 +22,7 @@ table 'euro edições'
 		dataType: int64
 		formatString: 0
 		lineageTag: adb9e648-5ab1-46f5-9605-d66fff7a6b2c
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: idedicao
 
 		annotation SummarizationSetBy = Automatic

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "6ccf1691dc9c230c0707",
   "position": {
-    "x": 773.11512844909612,
-    "y": 384.36536631779262,
+    "x": 739.62511934873282,
+    "y": 384.220841220121,
     "z": 2000,
-    "height": 334.67554709800191,
-    "width": 482.28353948620367,
+    "height": 172.89937854905443,
+    "width": 515.95370106701955,
     "tabOrder": 2000
   },
   "visual": {
@@ -67,8 +67,8 @@
                 }
               },
               "queryRef": "euro gols.nome_jogador",
-              "nativeQueryRef": " ",
-              "displayName": " "
+              "nativeQueryRef": " Mais velhos",
+              "displayName": " Mais velhos"
             },
             {
               "field": {
@@ -93,12 +93,12 @@
                       "Entity": "euro gols"
                     }
                   },
-                  "Property": "idade_jogador_anos"
+                  "Property": "idade_jogador_anos&dias"
                 }
               },
-              "queryRef": "Sum(euro gols.idade_jogador_anos)",
-              "nativeQueryRef": "Idade (anos)",
-              "displayName": "Idade (anos)"
+              "queryRef": "euro gols.idade_jogador_anos&dias",
+              "nativeQueryRef": "Idade",
+              "displayName": "Idade"
             }
           ]
         }
@@ -113,10 +113,10 @@
                     "Entity": "euro gols"
                   }
                 },
-                "Property": "idade_jogador_anos"
+                "Property": "idade_jogador_anos&dias"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -362,7 +362,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "105.6757154246982D"
+                  "Value": "134.57462186968314D"
                 }
               }
             }
@@ -527,6 +527,189 @@
                       }
                     ]
                   ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "32460d0370ee49313e00",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro gols"
+              }
+            },
+            "Property": "idgol"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "68f99dad0ca6ea2c700c",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "euro jogos"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "data"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
+              }
+            },
+            "Level": "Ano"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3855720c00a4337bae81",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro gols"
+              }
+            },
+            "Property": "nome_jogador"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b1c8f83f7584306a350b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro gols"
+              }
+            },
+            "Property": "seleção"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d4481f6167e72e711dce",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro gols"
+              }
+            },
+            "Property": "idade_jogador_anos&dias"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "17fec72d04400054c90e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro gols"
+              }
+            },
+            "Property": "idade_jogador"
+          }
+        },
+        "type": "TopN",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "euro gols",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "e"
+                            }
+                          },
+                          "Property": "idade_jogador"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "e"
+                                  }
+                                },
+                                "Property": "idade_jogador_anos&dias"
+                              }
+                            },
+                            "Function": 3
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 5
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "e",
+              "Entity": "euro gols",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "e"
+                          }
+                        },
+                        "Property": "idade_jogador"
+                      }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
+                    }
+                  }
                 }
               }
             }

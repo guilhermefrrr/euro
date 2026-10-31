@@ -1713,6 +1713,26 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Mais velhos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mais novos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2029,6 +2049,16 @@ cultureInfo pt-BR
 			          "ano": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Edição": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2251,20 +2281,13 @@ cultureInfo pt-BR
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "idedicao": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Ano": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -3880,16 +3903,6 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Idade (anos)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -4084,6 +4097,39 @@ cultureInfo pt-BR
 			        },
 			        {
 			          "Gols sofridos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "euro_gol.idade_jogador_anosdias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "euro gols",
+			          "ConceptualProperty": "idade_jogador_anos&dias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "idade_jogador_anos&dias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "idade_jogador_ano&dias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Idade": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5778,52 +5824,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_euro_campeã": {
-			      "Binding": {
-			        "ConceptualEntity": "euro resultados"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "euro_resultado": {
-			          "Target": {
-			            "Entity": "euro_resultado"
-			          }
-			        },
-			        "euro_campeã": {
-			          "Target": {
-			            "Entity": "euro_campeã"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "euro_resultado"
-			            },
-			            "Object": {
-			              "Role": "euro_campeã"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "euro_resultados_have_euro_campeã"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "euro_campeã"
-			            },
-			            "Object": {
-			              "Role": "euro_resultado"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "euro_campeã_have_euro_resultados"
-			        }
-			      ]
-			    },
 			    "euro_resultado_has_euro_jogo": {
 			      "Binding": {
 			        "ConceptualEntity": "euro resultados"
@@ -5867,6 +5867,85 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "euro_jogo_have_euro_resultados"
+			        }
+			      ]
+			    },
+			    "euro_jogo_has_euro_ediçõe": {
+			      "Binding": {
+			        "ConceptualEntity": "euro jogos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "euro_jogo": {
+			          "Target": {
+			            "Entity": "euro_jogo"
+			          }
+			        },
+			        "euro_ediçõe": {
+			          "Target": {
+			            "Entity": "euro_ediçõe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "euro_jogo"
+			            },
+			            "Object": {
+			              "Role": "euro_ediçõe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "euro_jogo_have_euro_edições"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "euro_ediçõe"
+			            },
+			            "Object": {
+			              "Role": "euro_jogo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "euro_edições_have_euro_jogo"
+			        }
+			      ]
+			    },
+			    "euro_gol_has_idade_jogador_anosdias": {
+			      "Binding": {
+			        "ConceptualEntity": "euro gols"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "euro_gol": {
+			          "Target": {
+			            "Entity": "euro_gol"
+			          }
+			        },
+			        "euro_gol.idade_jogador_anosdias": {
+			          "Target": {
+			            "Entity": "euro_gol.idade_jogador_anosdias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "euro_gol"
+			            },
+			            "Object": {
+			              "Role": "euro_gol.idade_jogador_anosdias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "euro_gols_have_idade_jogador_anosdias"
 			        }
 			      ]
 			    },
@@ -6035,15 +6114,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "euro_resultado_has_medida_jogos": {
+			    "euro_jogo_has_medida_jogos": {
 			      "Binding": {
-			        "ConceptualEntity": "euro resultados"
+			        "ConceptualEntity": "euro jogos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "euro_resultado": {
+			        "euro_jogo": {
 			          "Target": {
-			            "Entity": "euro_resultado"
+			            "Entity": "euro_jogo"
 			          }
 			        },
 			        "medida.jogos": {
@@ -6056,7 +6135,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "euro_resultado"
+			              "Role": "euro_jogo"
 			            },
 			            "Object": {
 			              "Role": "medida.jogos"
@@ -6064,7 +6143,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "euro_resultados_have_jogos"
+			          "ID": "euro_jogo_have_jogos"
 			        }
 			      ]
 			    },
@@ -6692,39 +6771,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "euro_resultados_have_idresultados"
-			        }
-			      ]
-			    },
-			    "euro_jogo_has_idedicao": {
-			      "Binding": {
-			        "ConceptualEntity": "euro jogos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "euro_jogo": {
-			          "Target": {
-			            "Entity": "euro_jogo"
-			          }
-			        },
-			        "euro_jogo.idedicao": {
-			          "Target": {
-			            "Entity": "euro_jogo.idedicao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "euro_jogo"
-			            },
-			            "Object": {
-			              "Role": "euro_jogo.idedicao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "euro_jogo_have_idedicaos"
 			        }
 			      ]
 			    },

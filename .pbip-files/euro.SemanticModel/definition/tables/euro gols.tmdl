@@ -150,14 +150,20 @@ table 'euro gols'
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column idade_jogador_anos
-		dataType: double
+		dataType: string
 		lineageTag: 412dd857-83db-4ff0-8255-b3250f75483e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: idade_jogador_anos
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	column idade_jogador_anos&dias
+		dataType: string
+		lineageTag: 9aa4924e-be5f-474d-b280-60b4c8c29b1b
+		summarizeBy: none
+		sourceColumn: idade_jogador_anos&dias
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'euro gols' = m
 		mode: import
@@ -177,10 +183,13 @@ table 'euro gols'
 				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Colunas Renomeadas",{"idgol", "idjogo", "idedicao", "seleção", "nome_jogador", "contra", "etapa", "minuto", "placar_time", "placar_adversario", "momento_gol", "ordem_momento_gol", "data_jogo", "data_nascimento_jogador"}),
 				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Reordenadas", "idade_jogador", each [data_jogo] - [data_nascimento_jogador]),
 				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"idade_jogador", type duration}}),
-				    #"Total de Anos Inseridos" = Table.AddColumn(#"Tipo Alterado1", "Total de Anos", each Duration.TotalDays([idade_jogador]) / 365, type number),
-				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Total de Anos Inseridos",{{"Total de Anos", "idade_jogador_anos"}})
+				    #"Total de Anos Inseridos" = Table.AddColumn(#"Tipo Alterado1", "Total de Anos", each Date.Year([data_jogo]) - Date.Year([data_nascimento_jogador])
+				  - (if Date.AddYears([data_nascimento_jogador], Date.Year([data_jogo]) - Date.Year([data_nascimento_jogador])) > [data_jogo] then 1 else 0)),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Total de Anos Inseridos",{{"Total de Anos", "idade_jogador_anos"}}),
+				    #"Personalização Adicionada1" = Table.AddColumn(#"Colunas Renomeadas1", "idade_jogador_anos&dias", each Text.From([#"idade_jogador_anos"]) & " anos e "
+				  & Text.From(Duration.Days([data_jogo] - Date.AddYears([data_nascimento_jogador], [#"idade_jogador_anos"]))) & " dias")
 				in
-				    #"Colunas Renomeadas1"
+				    #"Personalização Adicionada1"
 
 	annotation PBI_ResultType = Table
 

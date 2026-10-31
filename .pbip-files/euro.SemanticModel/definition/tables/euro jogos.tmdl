@@ -132,7 +132,7 @@ table 'euro jogos'
 		dataType: int64
 		formatString: 0
 		lineageTag: 0e8b4e7c-2afd-434d-813a-4801e2389be9
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: idedicao
 
 		annotation SummarizationSetBy = Automatic

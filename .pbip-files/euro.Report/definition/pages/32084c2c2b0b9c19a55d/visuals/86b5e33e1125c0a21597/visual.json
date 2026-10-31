@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "euro jogos"
+                      "Entity": "euro edições"
                     }
                   },
-                  "Property": "idedicao"
+                  "Property": "ano"
                 }
               },
-              "queryRef": "euro jogos.idedicao",
-              "nativeQueryRef": "Edição",
+              "queryRef": "euro edições.ano",
+              "nativeQueryRef": "Ano",
               "active": true,
-              "displayName": "Edição"
+              "displayName": "Ano"
             }
           ]
         },
@@ -81,18 +81,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "euro jogos"
-                      }
-                    },
-                    "Property": "idjogo"
+                  "SourceRef": {
+                    "Entity": "euro edições"
                   }
                 },
-                "Function": 5
+                "Property": "ano"
               }
             },
             "direction": "Ascending"
@@ -517,5 +512,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "73aceea5c503ed1c0100",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "euro edições"
+              }
+            },
+            "Property": "ano"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a2386b74c0e7ee971914",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "euro jogos"
+                  }
+                },
+                "Property": "idjogo"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "727cb178bdbc4700980c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medidas"
+              }
+            },
+            "Property": "Média de gols"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

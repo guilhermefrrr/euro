@@ -42,7 +42,7 @@ table medidas
 		formatString: 0
 		lineageTag: 7163dc11-b081-4966-bfae-7085fa4186fb
 
-	measure Jogos = COALESCE(COUNTROWS('euro resultados'), 0)
+	measure Jogos = COALESCE(COUNTROWS('euro jogos'), 0)
 		formatString: 0
 		lineageTag: eba69f2a-cc37-4b4a-9f61-7d6a5cf4da64
 

@@ -5,12 +5,12 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 8.848566281201613
       },
       "nodes": [
         {
           "location": {
-            "x": 597.38305001469382,
+            "x": 657.42689365967385,
             "y": 0
           },
           "nodeIndex": "euro gols",
@@ -19,12 +19,12 @@
             "height": 333,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 936.38305001469382,
-            "y": 59.422348979922475
+            "x": 964.82487068863168,
+            "y": 10.439213374807153
           },
           "nodeIndex": "euro jogadores",
           "nodeLineageTag": "792c4233-b0a1-4167-8728-52fdeedbf32f",
@@ -32,7 +32,7 @@
             "height": 251,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
@@ -58,12 +58,12 @@
             "height": 296,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 6
         },
         {
           "location": {
-            "x": 288.12337236895024,
-            "y": 609.413985913508
+            "x": 0,
+            "y": 691.57924563821757
           },
           "nodeIndex": "euro edições",
           "nodeLineageTag": "230829b6-4210-4b81-ba4b-f1f8e762957c",
@@ -71,7 +71,7 @@
             "height": 183.90050574276052,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 8
         },
         {
           "location": {
@@ -84,12 +84,12 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 7
         },
         {
           "location": {
-            "x": 1049.7321259710661,
-            "y": 499.5071583862408
+            "x": 398.73045276759785,
+            "y": 727.04172377774421
           },
           "nodeIndex": "medidas",
           "nodeLineageTag": "3bfe475d-1a46-46e8-a514-9f2fbaf41449",
@@ -97,12 +97,12 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
-            "x": 453.61578622754234,
-            "y": 443.2643262267818
+            "x": 1139.3796846991568,
+            "y": 623.395857161722
           },
           "nodeIndex": "euro nomes atuais",
           "nodeLineageTag": "c1aed5ea-ad33-4457-a5a5-960fea8ac91c",
@@ -110,7 +110,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         }
       ],
       "name": "Todas as tabelas",
